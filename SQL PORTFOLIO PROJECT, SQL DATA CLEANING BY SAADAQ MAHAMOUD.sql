@@ -114,7 +114,7 @@ Select SoldAsVacant
 	   When SoldAsVacant = '0' THEN 'No'
 	   ELSE SoldAsVacant
 	   END
-From housingproject.dbo.[HouseData] --This is just preparation before I actual
+From housingproject.dbo.[HouseData] --This is just preparation before I actually update the data, its good habit for me to double check if my query is working as it should.
 
 
 Update [HouseData]
@@ -129,4 +129,4 @@ Select *
 From housingproject.dbo.[HouseData]
 
 ALTER TABLE housingproject.dbo.[HouseData]
-DROP COLUMN PropertySplitCity, PropertySplitAddress --dropping the 2 table that i did in a way I struggled in 
+DROP COLUMN PropertySplitCity, PropertySplitAddress --dropping the 2 colummns that I do not need anymore.
